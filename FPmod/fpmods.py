@@ -1971,7 +1971,7 @@ class FP_Hom(Morphism):
 #-----------------------Elements-of-FP_Modules-----------------------------------
 #--------------------------------------------------------------------------------
 
-class FP_Element(ModuleElement):
+class FP_Element(sage.structure.element.ModuleElement):
     r"""
     Yields an element of an FP_Module, given by defining the coefficients on each
     generator of the module.
