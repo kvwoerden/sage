@@ -1,5 +1,0 @@
-#load("FPmod/fpmods.py")
-M = FP_Module([0, 1], [[Sq(2), Sq(1)], [0, Sq(2)], [Sq(3), 0]])
-x = M([1,0])
-y = M.gen(1)
-z = x*Sq(2)*Sq(1)*Sq(2)
