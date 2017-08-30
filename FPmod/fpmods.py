@@ -1140,8 +1140,8 @@ and computing with elements involves finding the enveloping profile.
                             map(lambda x: x[2]*bas_dict[(x[0],x[1])],r))])
         quo = bas_vec/rel_vec
         if quo.dimension() == 0:  
-            sec = Hom(quo,bas_vec)(0)
-            q = Hom(bas_vec,quo)([quo(0) for xx in bas_vec.basis()])
+            sec = Hom(quo,bas_vec).zero()
+            q = Hom(bas_vec,quo)([quo.zero() for xx in bas_vec.basis()])
         else:
             sec = Hom(quo,bas_vec)([quo.lift(xx) for xx in quo.basis()])
             q = Hom(bas_vec,quo)([quo(xx) for xx in bas_vec.basis()])
