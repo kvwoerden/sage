@@ -4,7 +4,7 @@ pp = pprint.PrettyPrinter(width=2)
 
 N = FP_Module([0], [[Sq(1)], [Sq(2)], [Sq(4)]])
 
-L = 3 # Length of resolution
+L = 10 # Length of resolution
 
 print("Computing a resolution of A//A(2) of length {0}\n".format(L))
 R = N.resolution(L, verbose=true)
