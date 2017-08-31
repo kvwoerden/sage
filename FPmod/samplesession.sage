@@ -41,7 +41,15 @@ commands = ["M = FP_Module([0, 1], [[Sq(2), Sq(1)], [0, Sq(2)], [Sq(3), 0]])",
             "print(CC.rels)",
             "I, e, m = h.image()",
             "print(I.degs)",
-            "print(I.rels)"]
+            "print(I.rels)",
+            "Hko = FP_Module([0], [[Sq(1)], [Sq(2)]])",
+            "R = Hko.resolution(5, verbose=true)",
+            "print(is_complex(R))",
+            "print(is_exact(R))",
+             "for i in range(6):\n\
+                    print(\"Stage {0}\\n\
+Degrees: {1}\\n\
+Values of R[i]: {2}\".format(i, R[i].domain.degs, R[i].values))"]
 
 
 
